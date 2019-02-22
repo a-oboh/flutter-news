@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
+    <CLASSES>
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_webview_plugin-0.3.0+2" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/share-0.6.0" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-5.0.0" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.3.0" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-2.2.0+1" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_analytics-1.2.0+1" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_admob-0.5.7" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/google_api_availability-1.0.6" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator-3.0.0" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-2.2.0" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

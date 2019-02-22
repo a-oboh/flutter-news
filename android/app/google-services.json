@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "95476136672",
+    "firebase_url": "https://reggo-fb82b.firebaseio.com",
+    "project_id": "reggo-fb82b",
+    "storage_bucket": "reggo-fb82b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95476136672:android:545981d75a97cceb",
+        "android_client_info": {
+          "package_name": "com.sparkidea.reggo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95476136672-h23a6p6knud101ou7k60p1j745etrj6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKKFR7i-n9M3B5QB4iMCMpUk8Zeo0b_6M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

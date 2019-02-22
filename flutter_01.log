@@ -1,0 +1,99 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter packages get
+
+## exception
+
+YamlException: Error on line 47, column 3: Duplicate mapping key.
+  assets:
+  ^^^^^^
+
+```
+#0      Loader._loadMapping (package:yaml/src/loader.dart:167:9)
+#1      Loader._loadNode (package:yaml/src/loader.dart:86:16)
+#2      Loader._loadMapping (package:yaml/src/loader.dart:165:19)
+#3      Loader._loadNode (package:yaml/src/loader.dart:86:16)
+#4      Loader._loadDocument (package:yaml/src/loader.dart:62:20)
+#5      Loader.load (package:yaml/src/loader.dart:54:20)
+#6      loadYamlDocument (package:yaml/yaml.dart:51:25)
+#7      loadYamlNode (package:yaml/yaml.dart:42:5)
+#8      loadYaml (package:yaml/yaml.dart:34:5)
+#9      _pluginFromPubspec (package:flutter_tools/src/plugins.dart:62:27)
+#10     findPlugins.<anonymous closure> (package:flutter_tools/src/plugins.dart:85:27)
+#11     __InternalLinkedHashMap&_HashVMBase&MapMixin&_LinkedHashMapMixin.forEach (dart:collection/runtime/libcompact_hash.dart:370:8)
+#12     findPlugins (package:flutter_tools/src/plugins.dart:83:12)
+#13     injectPlugins (package:flutter_tools/src/plugins.dart:297:32)
+<asynchronous suspension>
+#14     FlutterProject.ensureReadyForPlatformSpecificTooling (package:flutter_tools/src/project.dart:142:11)
+<asynchronous suspension>
+#15     PackagesGetCommand.runCommand (package:flutter_tools/src/commands/packages.dart:84:23)
+<asynchronous suspension>
+#16     FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:401:18)
+#17     _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#18     _rootRunUnary (dart:async/zone.dart:1132:38)
+#19     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#20     _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#21     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#22     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#23     Future._complete (dart:async/future_impl.dart:476:7)
+#24     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#25     _AsyncAwaitCompleter.complete.<anonymous closure> (dart:async/runtime/libasync_patch.dart:33:20)
+#26     _rootRun (dart:async/zone.dart:1124:13)
+#27     _CustomZone.run (dart:async/zone.dart:1021:19)
+#28     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:947:23)
+#29     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#30     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#31     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#32     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, v1.0.0, on Microsoft Windows [Version 10.0.14393], locale en-US)
+    • Flutter version 1.0.0 at C:\flutter
+    • Framework revision 5391447fae (9 weeks ago), 2018-11-29 19:41:26 -0800
+    • Engine revision 7375a0f414
+    • Dart version 2.1.0 (build 2.1.0-dev.9.4 f9ebf21297)
+
+[!] Android toolchain - develop for Android devices (Android SDK 28.0.3)
+    • Android SDK at C:\Users\Albert\AppData\Local\Android\Sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-28, build-tools 28.0.3
+    • ANDROID_HOME = C:\Users\Albert\AppData\Local\Android\Sdk
+    • Java binary at: C:\Program Files\Android\Android Studio1\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b02)
+    ✗ Android license status unknown.
+
+[✓] Android Studio (version 3.1)
+    • Android Studio at C:\Program Files\Android\Android Studio1
+    • Flutter plugin version 29.0.1
+    • Dart plugin version 173.4700
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b02)
+
+[!] IntelliJ IDEA Community Edition (version 2017.1)
+    • IntelliJ at C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.5
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    • For information about installing plugins, see
+      https://flutter.io/intellij-setup/#installing-the-plugins
+
+[✓] VS Code (version 1.30.2)
+    • VS Code at C:\Users\Albert\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 2.22.1
+
+[✓] VS Code, 32-bit edition
+    • VS Code at C:\Program Files (x86)\Microsoft VS Code
+    • Flutter extension version 2.22.1
+
+[✓] VS Code, 64-bit edition (version 1.30.1)
+    • VS Code at C:\Program Files\Microsoft VS Code
+    • Flutter extension version 2.22.1
+
+[✓] Connected device (1 available)
+    • M9 • 0123456789ABCDEF • android-arm • Android 7.0 (API 24)
+
+! Doctor found issues in 2 categories.
+```
