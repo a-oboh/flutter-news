@@ -1,37 +1,3 @@
-/* 
-public class Source
-{
-    public string id { get; set; }
-    public string name { get; set; }
-    public string description { get; set; }
-    public string url { get; set; }
-    public string category { get; set; }
-    public string language { get; set; }
-    public string country { get; set; }
-}
-
-public class RootObject
-{
-    public string status { get; set; }
-    public List<Source> sources { get; set; }
-}
-
-*/
-
-/*
-public class Article
-{
-    public Source source { get; set; }
-    public string author { get; set; }
-    public string title { get; set; }
-    public string description { get; set; }
-    public string url { get; set; }
-    public string urlToImage { get; set; }
-    public DateTime publishedAt { get; set; }
-    public string content { get; set; }
-}
-*/
-
 import 'dart:core';
 
 class NewsApi {
@@ -122,26 +88,52 @@ class Source {
   }
 }
 
-class Search{  
-      String status;
-      String totalResults;
-      String articles;
+//Nigeria
+class Nigeria{  
+      // String status;
+      // String totalResults;
+      // String articles; 
+  final String author;
+  final String title;
+  final String description;
+  final String url;
+  final String urlToImage;
+  final String publishedAt;
+  final String content;
     
-      Search({ 
-        this.status,this.totalResults,this.articles,
+      Nigeria({this.author, this.title, this.description, this.url, this.urlToImage, this.publishedAt, this.content, 
+        
       });
       
-      static Search fromJson(Map<String,dynamic> json){
-        return Search( 
-            status: json['status'],
-            totalResults: json['totalResults'],
-            articles: json['articles'],
-        );
-      }
+      // static Nigeria fromJson(Map<String,dynamic> json){
+      //   return Nigeria( 
+      //       status: json['status'],
+      //       totalResults: json['totalResults'],
+      //       articles: json['articles'],
+      //       author: json['author'],
+      //   description: json['description'],
+      //   url: json['url'],
+      //   title: json['title'],
+      //   urlToImage: json['urlToImage'],
+      //   content: json['content'],
+      //   publishedAt: json['publishedAt']
+      //   );
+      // }
       
-      Map<String, dynamic> toJson() => { 
-            'status': status,
-            'totalResults': totalResults,
-            'articles': articles,
-      };
+      factory Nigeria.fromJson(Map<String, dynamic> json) {
+    return Nigeria(
+        author: json['author'],
+        description: json['description'],
+        url: json['url'],
+        title: json['title'],
+        urlToImage: json['urlToImage'],
+        content: json['content'],
+        publishedAt: json['publishedAt']);
+  }
+      
+      // Map<String, dynamic> toJson() => { 
+      //       'status': status,
+      //       'totalResults': totalResults,
+      //       'articles': articles,
+      // };
     }
