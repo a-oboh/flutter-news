@@ -53,9 +53,10 @@ class _SourceScreenState extends State<SourceScreen> {
           iconTheme: new IconThemeData(color: Colors.red),
           actions: <Widget>[
             IconButton(
+              tooltip: 'Search news',
               icon:Icon(
                 Icons.search,
-                color: Colors.blue,
+                color: Colors.red,
               ),
               onPressed: (){
                 showSearch(
@@ -108,9 +109,9 @@ class _SourceScreenState extends State<SourceScreen> {
                   
                 },
                 child: ListTile(
-                  title: Text("Search for news"),
+                  title: Text("Local news"),
                   leading: Icon(
-                    Icons.search,
+                    Icons.location_on,
                     color: Colors.red,
                   ),
                 ),
