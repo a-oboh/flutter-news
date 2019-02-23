@@ -1,6 +1,6 @@
-# reggo_news
+# Reggo News
 
-A new Flutter project.
+A news app built with flutter.
 
 ## Getting Started
 
